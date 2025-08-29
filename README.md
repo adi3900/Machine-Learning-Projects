@@ -51,4 +51,21 @@ The goal of this project is to showcase practical ML skills and solve **[insert 
 ├── .env.example                 # Environment variables template
 ├── LICENSE
 └── README.md
+```
+# 🧰 Tech Stack
 
+Core: Python (NumPy, Pandas, Scikit-learn)
+
+Viz: Matplotlib, Seaborn/Plotly (optional)
+
+Modeling (optional): XGBoost / LightGBM / CatBoost / PyTorch
+
+Orchestration (optional): Makefile / DVC
+
+API/UI (optional): FastAPI or Streamlit
+
+Testing & Quality: Pytest, Black, Ruff, Pre-commit
+
+CI/CD (optional): GitHub Actions
+
+Container (optional): Docker
