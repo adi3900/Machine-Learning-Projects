@@ -64,6 +64,21 @@ Orchestration (optional): Makefile / DVC
 
 API/UI (optional): FastAPI or Streamlit
 
+
+
+🚀 Project Workflow
+
+Data Collection → Load dataset from [source / Kaggle / API].
+
+Data Preprocessing → Cleaning, handling missing values, encoding, scaling.
+
+EDA (Exploratory Data Analysis) → Visualizations, feature correlations, distributions.
+
+Model Training → Train/test split, baseline model, hyperparameter tuning.
+
+Evaluation → Metrics such as Accuracy, Precision, Recall, F1, ROC-AUC.
+
+Deployment (Optional) → Model served via Flask/Streamlit API.
 Testing & Quality: Pytest, Black, Ruff, Pre-commit
 
 CI/CD (optional): GitHub Actions
