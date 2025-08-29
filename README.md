@@ -13,14 +13,42 @@ The goal of this project is to showcase practical ML skills and solve **[insert 
 
 ## 📂 Repository Structure  
 ```bash
-├── data/               # Raw & processed datasets
-├── notebooks/          # Jupyter notebooks for exploration
-├── src/                # Source code for preprocessing & models
-│   ├── preprocessing.py
-│   ├── train.py
-│   ├── evaluate.py
-├── models/             # Saved trained models
-├── requirements.txt    # Python dependencies
-├── README.md           # Project documentation
+## 🗂️ Project Structure
 
+```bash
+.
+├── app/                         # Optional API/UI (Streamlit/FastAPI)
+│   ├── main.py                  # Streamlit or FastAPI entry
+│   └── pages/                   # Streamlit multipage apps
+├── data/
+│   ├── raw/                     # Immutable raw data
+│   ├── interim/                 # Intermediate data
+│   └── processed/               # Final features for modeling
+├── notebooks/                   # EDA & experiments (numbered for order)
+│   ├── 01_eda.ipynb
+│   └── 02_model_dev.ipynb
+├── models/                      # Serialized models, artifacts
+├── reports/
+│   ├── figures/                 # Plots (confusion matrix, ROC, etc.)
+│   └── metrics.json             # Saved metrics
+├── src/
+│   ├── __init__.py
+│   ├── config.py                # Global config / paths
+│   ├── data.py                  # Load/split data
+│   ├── features.py              # Cleaning & feature engineering
+│   ├── train.py                 # Train pipeline
+│   ├── evaluate.py              # Evaluation & metrics
+│   ├── predict.py               # Batch or single prediction
+│   └── utils.py                 # Helpers (logging, timing, I/O)
+├── tests/                       # Unit tests
+│   ├── test_data.py
+│   └── test_pipeline.py
+├── requirements.txt             # Python dependencies (runtime)
+├── requirements-dev.txt         # Dev dependencies (linting, tests)
+├── Makefile                     # Common commands (make train, make test, ...)
+├── docker/Dockerfile            # Containerization (optional)
+├── .github/workflows/ci.yml     # CI pipeline (optional)
+├── .env.example                 # Environment variables template
+├── LICENSE
+└── README.md
 
