@@ -66,7 +66,7 @@ API/UI (optional): FastAPI or Streamlit
 
 
 
-🚀 Project Workflow
+# 🚀 Project Workflow
 
 Data Collection → Load dataset from [source / Kaggle / API].
 
